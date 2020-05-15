@@ -8,13 +8,12 @@ public class TestModel {
 
 		System.out.println("TestModel -- TODO");
 		
-//		System.out.println("Creo il grafo relativo al 2000");
-//		model.createGraph(2000);
+		System.out.println("Creo il grafo relativo al 2000");
+		model.creaGrafo(1960);
 		
-//		List<Country> countries = model.getCountries();
-//		System.out.format("Trovate %d nazioni\n", countries.size());
+        System.out.format("Trovate %d nazioni\n", model.nVertici());
 
-//		System.out.format("Numero componenti connesse: %d\n", model.getNumberOfConnectedComponents());
+		System.out.format("Numero componenti connesse: %d\n", model.nArchi());
 		
 //		Map<Country, Integer> stats = model.getCountryCounts();
 //		for (Country country : stats.keySet())
