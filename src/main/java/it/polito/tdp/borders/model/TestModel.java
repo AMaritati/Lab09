@@ -1,5 +1,9 @@
 package it.polito.tdp.borders.model;
 
+import java.util.List;
+
+
+
 public class TestModel {
 
 	public static void main(String[] args) {
@@ -7,7 +11,7 @@ public class TestModel {
 		Model model = new Model();
 		
 		System.out.println("Creo il grafo relativo al 2000");
-		model.creaGrafo(1900);
+		model.creaGrafo(2000);
 		
         System.out.format("Trovate %d nazioni\n", model.nVertici());
         System.out.format("%d\n", model.getCountries().size());
@@ -17,6 +21,11 @@ public class TestModel {
 		System.out.format("Numero componenti connesse: %d\n", model.componentiConnessi());
 		
 		System.out.println(model.degreesVertexes());
+		System.out.println("\n\n\n\n");
+		List<Country> visita1 = model.visitaAmpiezza(new Country("LAO",812,"Laos"));
+		System.out.println(visita1);
+		
+		
 		
 //		Map<Country, Integer> stats = model.getCountryCounts();
 //		for (Country country : stats.keySet())
@@ -25,3 +34,8 @@ public class TestModel {
 	}
 
 }
+/*
+ 
+
+ * */
+
